@@ -2,8 +2,7 @@ import win32api
 import win32con
 import pywintypes
 
-#cd wind
-#pyinstaller --onefile --console --icon="dr.ico" dynamiR.py
+#Crédito a la inteligencia artificial, ella hizo el trabajo.
 
 def obtener_resolucion_nativa():
     # ENUM_REGISTRY_SETTINGS (-2) obtiene la resolución guardada en el registro (la nativa/recomendada)
@@ -45,4 +44,5 @@ def toggle_resolucion():
         cambiar_resolucion(HIGH[0], HIGH[1])
 
 if __name__ == "__main__":
+
     toggle_resolucion()
